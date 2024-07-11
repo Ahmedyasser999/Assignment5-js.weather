@@ -1,0 +1,163 @@
+/* global styling  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1e202b;
+  color: white;
+}
+
+/* css styling */
+
+nav {
+  background-color: #1e202b;
+}
+#navbarNav a {
+  color: white;
+  border: solid 1px transparent;
+  transition: 0.2s;
+  border-radius: 25px;
+  padding: 5px 15px;
+}
+#navbarNav .active {
+  color: #109ad8;
+  border: solid 1px #109ad8;
+  border-radius: 25px;
+  padding: 5px 15px;
+}
+#navbarNav a:hover {
+  color: #109ad8;
+  border: solid 1px #109ad8;
+}
+
+.logo {
+  float: left;
+}
+.logo a {
+  text-decoration: none;
+}
+.logo .logo-title {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+}
+.logo .logo-title h5 {
+  margin-bottom: -5px;
+  font-size: 14px;
+}
+.logo .logo-title small {
+  font-size: 10px;
+}
+nav .navbar-toggler {
+  transition: 0.5s;
+  border: none;
+  padding: 14px 12px;
+}
+nav .navbar-toggler:hover {
+  color: #109ad8;
+  border: solid 2px #109ad8;
+  border-radius: 30px;
+}
+nav .bar {
+  color: white;
+  transition: 0.5s;
+  border: none;
+}
+nav .navbar-toggler:hover .bar {
+  color: #109ad8;
+}
+.search {
+  background-image: url(../images/banner.png);
+  min-height: 400px;
+  background-size: cover;
+}
+
+div .find-location {
+  background-color: #1e202b;
+  border-radius: 30px;
+  padding: 15px 14px;
+  border: none;
+}
+div #submit {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 35px;
+  background-color: #109ad8;
+  color: white;
+  font-size: 18px;
+}
+.mt-6 {
+  margin-top: 120px;
+}
+#dayToday,
+#dayTom,
+#dayAfterTom {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 16px 10px;
+}
+
+.cards {
+  margin-top: -120px;
+  margin-bottom: 50px;
+}
+.cards .row .height {
+  height: 310px;
+}
+.cards .row .bg-semidark {
+  background-color: #323544;
+}
+.cards .row .bg-dark-1 {
+  background-color: #262936;
+}
+footer {
+  background-color: #262936;
+}
+footer .enter-mail {
+  background-color: #1e202b;
+  border-radius: 30px;
+  padding: 15px 14px;
+  border: none;
+}
+footer #submit {
+  font-size: 16px;
+  padding: 10px 25px;
+}
+
+footer .social-links a {
+  text-decoration: none;
+}
+footer .social-links a i {
+  border: solid 12px #1e202b;
+  border-radius: 50%;
+  color: #009ad8;
+  font-size: 18px;
+  transition: 0.5s;
+}
+footer p {
+  font-size: 14px;
+}
+footer .social-links a:hover i {
+  border: solid 12px #009ad8;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  background-color: #009ad8;
+}
+
+@media (max-width: 991px) {
+  footer .mail {
+    margin: auto;
+    width: 100%;
+  }
+  footer .social-links {
+    margin: auto;
+    width: 100%;
+  }
+}

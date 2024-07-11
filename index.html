@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="style/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <!-- style  -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg p-5 b">
+      <div class="container">
+        <div class="logo">
+          <a href="">
+            <img
+              src="images/logo@2x.png"
+              alt="logo"
+              style="width: 60px; height: 40px"
+            />
+            <div class="logo-title p-2">
+              <h5>Weather</h5>
+              <small>tagline goes here</small>
+            </div>
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars bar"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-2">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search">
+      <div action="" class="w-75 m-auto d-flex position-relative">
+        <input
+          type="text"
+          placeholder="Find your location...."
+          class="find-location w-100 mt-6 text-white"
+          id="searchLocation"
+        />
+        <input type="button" id="submit" class="mt-6" value="Find" />
+      </div>
+    </div>
+
+    <div class="cards pb-5">
+      <div class="container">
+        <div class="row">
+          <!-- first Day -->
+          <div class="col-md-4 g-0">
+            <div class="height text-light mb-2 mb-md-0 bg-semidark">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 p-3"
+                id="dayToday"
+              >
+                <span id="todayWeekDayId">Today</span>
+                <span id="dateToday">9 August</span>
+              </div>
+              <div class="p-3">
+                <span id="cityToday">London</span>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center ps-3"
+              >
+                <span class="temp display-1 fw-bold d-block" id="tempToday"
+                  >24</span
+                >
+                <img class="icon me-1" id="imgToday" src="" alt="" />
+              </div>
+              <div class="ps-3">
+                <span class="condition mt-2 text-info" id="todayCond">
+                  Clear</span
+                >
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mt-2 p-3 icons"
+              >
+                <div>
+                  <img src="images/icon-umberella.png" alt="icon-umberella" />
+                  <span id="humidityToday">20%</span>
+                </div>
+                <div>
+                  <img src="images/icon-wind.png" alt="icon-wind" />
+                  <span id="windSpeedToday">18km/h</span>
+                </div>
+                <div>
+                  <img src="images/icon-compass.png" alt="icon-compass" />
+                  <span id="dirToday">east</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second Day -->
+          <div class="col-md-4 g-0 text-center">
+            <div
+              class="bg-dark-1 height text-light mb-2 mb-md-0 d-flex flex-column"
+            >
+              <div class="" id="dayTom">
+                <span id="tomorrowDay">يوم بتــاع بكرا</span>
+              </div>
+              <div class="p-1">
+                <img id="iconTomorrow" class="my-2 p-1" src="" alt="" />
+                <span class="fs-4 fw-bold d-block mb-2 p-1" id="tMaxTemp"
+                  >70</span
+                >
+                <span class="d-block mb-2 p-1" id="tMinTemp">80</span>
+              </div>
+              <div>
+                <span id="tTomCond" class="p-1 text-info"></span>
+              </div>
+            </div>
+          </div>
+          <!-- Third Day -->
+          <div class="col-md-4 g-0 text-center">
+            <div
+              class="height text-light mb-2 mb-md-0 bg-semidark d-flex flex-column"
+            >
+              <div class="" id="dayAfterTom">
+                <span id="afterTomorrow" class="p-3">يوم بتــاع بعد بكرا</span>
+              </div>
+              <div class="p-1">
+                <img id="iconAfterTom" class="my-2 atIcon p-1" src="" alt="" />
+                <span class="fs-4 fw-bold d-block mb-2 p-1" id="afterTomMaxTemp"
+                  >120</span
+                >
+                <span class="d-block mb-2 p-1" id="afterTomMinTemp">87</span>
+              </div>
+              <div>
+                <span id="afterTomCond" class="p-1 text-info"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="pb-5">
+      <div class="footer-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <div action="" class="mail d-flex position-relative">
+                <input
+                  type="text"
+                  placeholder=" Enter your email to subscribe...."
+                  class="enter-mail ms-lg-4 w-100 mt-5 text-white"
+                />
+                <input
+                  type="button"
+                  id="submit"
+                  class="mt-5 sub"
+                  value="Subscribe"
+                />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="social-links mt-lg-5 mt-3">
+                <a href="" class="ms-lg-5">
+                  <i class="fa-brands fa-facebook ms-auto"></i>
+                </a>
+                <a href="" class="ms-1">
+                  <i class="fa-brands fa-twitter ms-auto"></i>
+                </a>
+                <a href="" class="ms-1">
+                  <i class="fa-brands fa-instagram ms-auto"></i>
+                </a>
+                <a href="" class="ms-1">
+                  <i class="fa-brands fa-google ms-auto"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <p class="mt-5 pt-lg-4 text-center">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
